@@ -17,7 +17,15 @@ router.post('/analyze', protect, async (req, res) => {
         'Electricity': ['electricity', 'power', 'outage', 'light', 'wire', 'transformer', 'blackout', 'voltage'],
         'Garbage': ['garbage', 'waste', 'trash', 'dump', 'clean', 'litter', 'sanitation'],
         'Street Lights': ['street light', 'lamp', 'dark', 'lighting', 'bulb', 'light post'],
-        'Drainage': ['drain', 'clog', 'overflow', 'waterlogging', 'blocked']
+        'Drainage': ['drain', 'clog', 'overflow', 'waterlogging', 'blocked'],
+        'Sexual Harassment': ['harassment', 'assault', 'abuse', 'sexual', 'molestation', 'inappropriate', 'unwanted'],
+        'Family Issues': ['family', 'domestic', 'marriage', 'divorce', 'child', 'spouse', 'parents', 'abuse'],
+        'Cyber Crime': ['hacking', 'cybercrime', 'fraud', 'scam', 'phishing', 'online', 'identity theft', 'virus'],
+        'Public Safety': ['crime', 'theft', 'robbery', 'violence', 'police', 'safety', 'attack', 'assault'],
+        'Corruption': ['corruption', 'bribery', 'fraud', 'embezzlement', 'nepotism', 'malpractice'],
+        'Labor Rights': ['labor', 'wage', 'employment', 'worker', 'strike', 'rights', 'exploitation', 'work'],
+        'Healthcare': ['hospital', 'doctor', 'medical', 'health', 'medicine', 'treatment', 'health center'],
+        'Environmental Issues': ['pollution', 'environment', 'waste', 'toxic', 'air', 'water quality', 'trees', 'green']
       },
       college: {
         'WiFi Issues': ['wifi', 'internet', 'network', 'connection', 'bandwidth', 'slow internet'],

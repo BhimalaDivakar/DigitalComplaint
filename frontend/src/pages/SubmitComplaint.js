@@ -4,7 +4,7 @@ import { submitComplaint, analyzeComplaint } from '../services/api';
 import { toast } from 'react-toastify';
 
 const CATEGORIES = {
-  public: ['Roads / Potholes', 'Water Supply', 'Electricity / Outage', 'Garbage Collection', 'Street Lights', 'Drainage', 'Transportation', 'Sanitation'],
+  public: ['Roads / Potholes', 'Water Supply', 'Electricity / Outage', 'Garbage Collection', 'Street Lights', 'Drainage', 'Transportation', 'Sanitation', 'Sexual Harassment', 'Family Issues', 'Cyber Crime', 'Public Safety', 'Corruption', 'Labor Rights', 'Healthcare', 'Environmental Issues'],
   college: ['WiFi Issues', 'Hostel Issues', 'Academic Issues', 'Infrastructure', 'Exam Related', 'Library', 'Cafeteria', 'Sports Facilities'],
   company: ['HR Issues', 'Technical Issues', 'Workplace Complaints', 'Payroll Issues', 'Safety Concerns', 'IT Support'],
 };
