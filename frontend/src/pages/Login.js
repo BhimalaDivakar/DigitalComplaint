@@ -56,13 +56,6 @@ const Login = () => {
             No account?{' '}
             <Link to="/register" style={{ color: 'var(--g)', textDecoration: 'none' }}>Register here</Link>
           </p>
-          <div style={{ marginTop: '20px', padding: '12px', background: 'rgba(0,255,136,0.04)', border: '1px solid var(--border)', borderRadius: '3px' }}>
-            <div style={{ fontFamily: 'Share Tech Mono, monospace', fontSize: '11px', color: 'var(--text3)', marginBottom: '6px' }}>// DEMO CREDENTIALS</div>
-            <div style={{ fontFamily: 'Share Tech Mono, monospace', fontSize: '12px', color: 'var(--text2)' }}>
-              User: user@demo.com / demo123<br />
-              Admin: admin@demo.com / admin123
-            </div>
-          </div>
         </div>
       </div>
     </div>
