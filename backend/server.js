@@ -19,6 +19,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/complaints', require('./routes/complaints'));
 app.use('/api/admin', require('./routes/admin'));
 app.use('/api/ai', require('./routes/ai'));
+app.use('/api/chatbot', require('./routes/chatbot'));
 
 // Health check
 app.get('/api/health', (req, res) => res.json({ status: 'digitalcomplaint API Running', time: new Date() }));

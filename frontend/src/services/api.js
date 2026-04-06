@@ -42,3 +42,6 @@ export const assignComplaint = (id, userId) => API.patch(`/admin/complaints/${id
 
 // AI
 export const analyzeComplaint = (data) => API.post('/ai/analyze', data);
+
+// Chatbot
+export const chatbotMessage = (message) => API.post('/chatbot/chat', { message });
