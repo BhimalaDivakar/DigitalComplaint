@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { chatbotMessage } from '../services/api';
+import axios from 'axios';
 
 const Chatbot = ({ isOpen, onClose }) => {
   const [messages, setMessages] = useState([
@@ -25,13 +25,16 @@ const Chatbot = ({ isOpen, onClose }) => {
     setLoading(true);
 
     try {
-      const res = await chatbotMessage(userMessage);
+      const res = await axios.post('https://digitalcomplaint-api.onrender.com/api/chatbot/chat', {
+        message: userMessage
+      });
 
       setMessages(prev => [...prev, { type: 'bot', text: res.data.reply }]);
     } catch (err) {
+      console.error('Chatbot error:', err);
       setMessages(prev => [...prev, { 
         type: 'bot', 
-        text: 'Sorry! 😞 I\'m having trouble connecting. Please refresh and try again.' 
+        text: 'Sorry! 😞 I\'m having trouble connecting. Please check your internet and try again.' 
       }]);
     } finally {
       setLoading(false);
